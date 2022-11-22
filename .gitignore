@@ -1,0 +1,11 @@
+# Compiled binary addons 
+dist
+
+# Dependency directories
+node_modules/
+
+# VsCode folder
+.vscode
+
+.git
+

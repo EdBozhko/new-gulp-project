@@ -1,0 +1,130 @@
+.visually-hidden {
+  border-width: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.hide {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  @include mainFontFamily;
+  color: $white;
+  font-weight: 600;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 0.277vw;
+  @include screen-tb {
+    font-size: 0.13vw;
+  }
+  @include screen-lp {
+    font-size: 0.0521vw;
+  }
+  @include screen-lg {
+    font-size: 1.76px;
+  }
+}
+
+body {
+  min-width: 100%;
+  font-size: 14rem;
+  line-height: 1.2;
+  overflow-x: hidden;
+  user-select: none;
+  padding: 20rem;
+  @include screen-tb {
+    font-size: 18rem;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+.container {
+  padding: 10rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  @include screen-tb {
+    padding: 30rem;
+  }
+  @include screen-lp {
+    padding: 60rem;
+  }
+}
+
+/* MAIN FONTS */
+h1 {
+  font-size: 24rem;
+  @include screen-tb {
+    font-size: 50rem;
+  }
+  @include screen-lp {
+    font-size: 60rem;
+  }
+}
+
+h2 {
+  font-size: 20rem;
+  @include screen-tb {
+    font-size: 36rem;
+  }
+}
+
+h3 {
+  font-size: 18rem;
+  @include screen-tb {
+    font-size: 28rem;
+  }
+  @include screen-lp {
+    font-size: 34rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  hyphens: auto;
+}
